@@ -1,38 +1,38 @@
 body{
 	text-align: center;	
-	background: honeydew;
+	background: #dad4da;
 }
 .header{
 	display: inline-block;
 	width: 90%;
 	height: 100px;
-	background-color: lightsteel­blue;
+	background-color: #736056;
 	margin-bottom: 2%;
 }
 .left_column{
 	display: inline-block;
 	width: 23%;
 	height: 500px;
-	background-color: lightpink;
+	background-color: #2288a8;
 	margin-right: 1%;
 }
 .right_column{
 	display: inline-block;
 	width: 23%;
 	height: 500px;
-	background-color: pink;
+	background-color: #6d8836;
 	margin-left: 1%;
 }
 .central_column{
 	display: inline-block;
 	width: 23%;
 	height: 500px;
-	background-color:lightcoral;
+	background-color:#84cded;
 }
 .bottom{
 	display: inline-block;
 	width: 90%;
 	height: 100px;
-	background-color: lightsteel­blue;
+	background-color: #736056;
 	margin-top: 2%;
 }
