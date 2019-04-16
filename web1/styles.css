@@ -21,7 +21,6 @@ body{
 	width: 34%;
 	height: 500px;
 	background-color:#84cded;
-	float: right;
 }
 .right_column{
 	display: inline-block;
@@ -29,7 +28,6 @@ body{
 	height: 500px;
 	background-color: #6d8836;
 	margin-left: 1%;
-	float: right;
 }
 
 .bottom{
