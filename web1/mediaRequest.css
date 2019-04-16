@@ -19,13 +19,13 @@
 @media (min-width: 600px) and (max-width: 900px) {
 	.left_column{
 		width: 20%;
-		height: calc(500px + 1%);
+		height: 505px;
 	}
 	.central_column{
 		width: 69%;
 		margin-left: 0%;
 		height: 250px;
-		margin-bottom: 1%;
+		margin-bottom: 5px;
 
 	}
 	.right_column{
