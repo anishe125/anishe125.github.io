@@ -1,4 +1,4 @@
-@media (max-width: 600px)  {
+@media (max-width: 600px) or handheld {
 	.left_column{
 		width: 90%;
 		margin-left: 0%;
