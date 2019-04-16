@@ -20,10 +20,10 @@
 	.left_column{
 		width: 20%;
 		height: 505px;
+		margin-right: 1%;
 	}
 	.central_column{
 		width: 69%;
-		margin-left: 0%;
 		height: 250px;
 		margin-bottom: 5px;
 
