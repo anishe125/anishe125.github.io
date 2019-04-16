@@ -1,0 +1,33 @@
+@media (max-width: 600px) {
+	.left_column{
+		width: 90%;
+		margin-left: 0%;
+		height: 100px;
+	}
+	.central_column{
+		width: 90%;
+		height: 200px;
+		margin-bottom: 1%;
+		margin-top: 1%;
+	}
+	.right_column{
+		margin-right: 0%;
+		width: 90%;
+		height: 200px;
+	}
+}
+@media (min-width: 600px) and (max-width: 900px) {
+	.left_column{
+		width: 20%;
+	}
+	.central_column{
+		width: 69%;
+		margin-left: 0%;
+		height: 250%;
+	}
+	.right_column{
+		margin-left: 0%;
+		width: 69%;
+		height: 250px;
+	}
+}

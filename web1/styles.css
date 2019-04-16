@@ -11,21 +11,21 @@ body{
 }
 .left_column{
 	display: inline-block;
-	width: 23%;
+	width: 20%;
 	height: 500px;
 	background-color: #2288a8;
 	margin-right: 1%;
 }
 .right_column{
 	display: inline-block;
-	width: 23%;
+	width: 34%;
 	height: 500px;
 	background-color: #6d8836;
 	margin-left: 1%;
 }
 .central_column{
 	display: inline-block;
-	width: 23%;
+	width: 34%;
 	height: 500px;
 	background-color:#84cded;
 }
