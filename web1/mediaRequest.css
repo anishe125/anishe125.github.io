@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media (max-width: 600px) and screen {
 	.left_column{
 		width: 90%;
 		margin-left: 0%;
@@ -14,23 +14,5 @@
 		margin-right: 0%;
 		width: 90%;
 		height: 200px;
-	}
-}
-@media (min-width: 600px) and (max-width: 900px) {
-	.left_column{
-		width: 20%;
-		height: 605px;
-		margin-right: 1%;
-	}
-	.central_column{
-		width: 69%;
-		height: 250px;
-
-
-	}
-	.right_column{
-		margin-left: 0%;
-		width: 69%;
-		height: 250px;
 	}
 }
