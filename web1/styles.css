@@ -1,0 +1,38 @@
+body{
+	text-align: center;	
+	background: honeydew;
+}
+.header{
+	display: inline-block;
+	width: 90%;
+	height: 100px;
+	background-color: lightsteel­blue;
+	margin-bottom: 2%;
+}
+.left_column{
+	display: inline-block;
+	width: 23%;
+	height: 500px;
+	background-color: lightpink;
+	margin-right: 1%;
+}
+.right_column{
+	display: inline-block;
+	width: 23%;
+	height: 500px;
+	background-color: pink;
+	margin-left: 1%;
+}
+.central_column{
+	display: inline-block;
+	width: 23%;
+	height: 500px;
+	background-color:lightcoral;
+}
+.bottom{
+	display: inline-block;
+	width: 90%;
+	height: 100px;
+	background-color: lightsteel­blue;
+	margin-top: 2%;
+}
