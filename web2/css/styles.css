@@ -1,5 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Tenor+Sans|PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic);
 body {
-    font-family: 'Palatino', 'URW Palladio L', serif;
+    font-family: 'Tenor Sans', sans-serif;
 }
 
 
@@ -17,12 +18,48 @@ section.jumbotron {
 
 
 }
+section.jumbotron .container {
+    padding: 300px 0;
+}
+section {
+    padding: 150px 0;
+    color: #2B3335;
+}
+#about {
+    background-color: #0f0f0f;
+}
+#about-title {
+    font-size: 50px;
+}
+
+#about-text {
+    font-size: 20px;
+    color: white;
+}
+#second-about {
+    background-image: url(../img/1.jpg)
+}
+#second-about-title {
+    font-size: 50px;
+    color: white;
+}
+
+#second-about-text {
+    font-size: 20px;
+    color: white;
+}
+#boxes-about-paragraph {
+    font-size: 20px;
+}
 
 
 
 #main-welcome {
-    font-family: 'Palatino', 'URW Palladio L', serif;
+    font-family: 'Tenor Sans', sans-serif;
+    color: white;
     font-size: 60px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #404040;
 
 }
 
