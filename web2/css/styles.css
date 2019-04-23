@@ -1,0 +1,57 @@
+body {
+    font-family: 'Palatino', 'URW Palladio L', serif;
+}
+
+
+section.jumbotron {
+    background-image: url(../img/welcome.jpg);
+    height: 900px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: cover;
+    color: black;
+    position: relative;
+    margin: 0;
+
+
+}
+
+
+
+#main-welcome {
+    font-family: 'Palatino', 'URW Palladio L', serif;
+    font-size: 60px;
+
+}
+
+
+#services {
+    background-color: #ebe3e7;
+
+    height: auto;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    position: relative;
+    margin: 0;
+}
+
+
+
+#contact {
+    background-image: url(../img/contact.jpg);
+    height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    position: relative;
+    margin: 0;
+}
+
