@@ -36,9 +36,9 @@
     $(function find () {
         $("#btn").on('click', function () {
             let city = document.getElementById('cityName').value;
-            $.getJSON('https://api.openweathermap.org/data/2.5/weather?appid=f816129477a56b6c0840aa37d1e18cdc&?', {q: city}, function (cities) {
+            $.getJSON('https://api.openweathermap.org/data/2.5/weather?appid=f816129477a56b6c0840aa37d1e18cdc&?', {q: city}, function (data) {
                 let template = $("#main_template").html();
-                let text = Mustache.render(template, cities);
+                let text = Mustache.render(template, data);
                 $("#mypanel").html(text);
             })
                 .fail(function (error) {
