@@ -1,0 +1,22 @@
+th
+  width: 100px
+  background-color: cornflowerblue
+  color: aliceblue
+
+body
+  width: 500px
+  margin: auto
+
+input
+  width: 400px
+  margin-top: 20px
+  margin-bottom: 20px
+
+button
+  width: 90px
+  background-color: cornflowerblue
+  color: aliceblue
+
+
+td
+  width: 50px

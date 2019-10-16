@@ -72,8 +72,8 @@ function windowPrepared() {
 
     let imageArrayPromise = Promise.all(promises);
 
-    let x = Math.ceil(Math.random() * (canvas.width - 2 * 420 - 1));
-    let y = Math.ceil(Math.random() * (canvas.height - 2 * 420 - 1));
+    let x = Math.ceil(Math.random() * (canvas.width - 2 * 420 -1));
+    let y = Math.ceil(Math.random() * (canvas.height - 2 * 420 -1));
 
     imageArrayPromise.then(images => {
         context.drawImage(images[0], x, y);

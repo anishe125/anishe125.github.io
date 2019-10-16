@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="input-form">
+    <input type="text" name="cityName" id="cityName">
+    <button id="btn">Узнать погоду</button>
+</div>
+<script id="main_template" type="text/template">
+    <div class="wrapper">
+
+            <div><img src="./img/rainy.png"></div>
+            <div><img src="./img/warm.png"></div>
+            <div><img src="./img/humidity.png"></div>
+            <div><img src="./img/wind.png"></div>
+            <div><img src="./img/cloud.png"></div>
+            <div>{{main.pressure}}</div>
+            <div>{{main.temp}}</div>
+            <div>{{main.humidity}}%</div>
+            <div>{{wind.speed}} м/с</div>
+            <div>{{clouds.all}}%</div>
+    </div>
+</script>
+
+
+<div id="mypanel"></div>
+<script>
+    $(function find () {
+        $("#btn").on('click', function () {
+            let city = document.getElementById('cityName').value;
+            $.getJSON('https://api.openweathermap.org/data/2.5/weather?appid=f816129477a56b6c0840aa37d1e18cdc&?', {q: city}, function (cities) {
+                let template = $("#main_template").html();
+                let text = Mustache.render(template, cities);
+                $("#mypanel").html(text);
+            })
+                .fail(function (error) {
+                    if (error === 'Not found'){
+                        document.getElementById('mypanel').innerText = 'City not found';
+                    }
+                    else {
+                        document.getElementById('mypanel').innerText = 'Server error';
+                    }
+                })
+        });
+    });
+</script>
+
+</body>
+</html>
