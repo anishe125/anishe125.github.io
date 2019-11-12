@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
+<form id="input-form">
+    <input type="text" id="cityName" name="cityName">
+    <input type="submit" id="btn" value="Узнать погоду">
+</form>
 
-<div class="input-form">
-    <input type="text" name="cityName" id="cityName">
-    <button id="btn">Узнать погоду</button>
-</div>
 <script id="main_template" type="text/template">
     <div class="wrapper">
 
@@ -32,13 +34,17 @@
 
 
 <div id="mypanel"></div>
+<<<<<<< HEAD
+<script type="text/javascript" src="script.js"></script>
+
+=======
 <script>
     $(function find () {
         $("#btn").on('click', function () {
             let city = document.getElementById('cityName').value;
-            $.getJSON('https://api.openweathermap.org/data/2.5/weather?appid=f816129477a56b6c0840aa37d1e18cdc&?', {q: city}, function (cities) {
+            $.getJSON('https://api.openweathermap.org/data/2.5/weather?appid=f816129477a56b6c0840aa37d1e18cdc&?', {q: city}, function (data) {
                 let template = $("#main_template").html();
-                let text = Mustache.render(template, cities);
+                let text = Mustache.render(template, data);
                 $("#mypanel").html(text);
             })
                 .fail(function (error) {
@@ -52,6 +58,7 @@
         });
     });
 </script>
+>>>>>>> 9b56577a3a914ede48aeee492ca78f0502698217
 
 </body>
 </html>
