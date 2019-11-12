@@ -34,31 +34,8 @@
 
 
 <div id="mypanel"></div>
-<<<<<<< HEAD
 <script type="text/javascript" src="script.js"></script>
 
-=======
-<script>
-    $(function find () {
-        $("#btn").on('click', function () {
-            let city = document.getElementById('cityName').value;
-            $.getJSON('https://api.openweathermap.org/data/2.5/weather?appid=f816129477a56b6c0840aa37d1e18cdc&?', {q: city}, function (data) {
-                let template = $("#main_template").html();
-                let text = Mustache.render(template, data);
-                $("#mypanel").html(text);
-            })
-                .fail(function (error) {
-                    if (error === 'Not found'){
-                        document.getElementById('mypanel').innerText = 'City not found';
-                    }
-                    else {
-                        document.getElementById('mypanel').innerText = 'Server error';
-                    }
-                })
-        });
-    });
-</script>
->>>>>>> 9b56577a3a914ede48aeee492ca78f0502698217
 
 </body>
 </html>
