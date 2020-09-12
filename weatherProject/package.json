@@ -29,7 +29,7 @@
     "file-loader": "^5.0.2",
     "jsdom": "15.2.1",
     "jsdom-global": "3.0.2",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.1"
   },
   "scripts": {
     "start": "webpack-dev-server --history-api-fallback --inline --progress",
